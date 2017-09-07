@@ -34,15 +34,14 @@
 div.hrFull{
 	height: 10%;
 }
-.div1{
+.div50{
 	position: relative;
 	width: 100%;
 	height: 45%;
 }
-.div2{
-	position: relative;
-	width: 100%;
-	height: 45%;
+.divImg {
+	width: 70%;
+	margin: auto;
 }
 
 
