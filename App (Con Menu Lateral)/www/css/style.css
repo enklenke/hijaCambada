@@ -1,5 +1,6 @@
-/* PORTAA */
-.fondoPortada{
-	background-image: url("../img/pantallas/fondoPortada.jpg");
+/* PORTADA */
+.fondoPortada {
+    background-size: contain;
+    background-image: url(../img/pantallas/fondoPortada.jpg);
 }
 
