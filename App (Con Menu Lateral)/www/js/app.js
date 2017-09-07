@@ -53,6 +53,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla opuesta alterna
+  .state('app.opuestaAlterna', {
+    url: '/opuestaAlterna',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/opuestaAlterna.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
   // Pantalla para probar array de plantas
   .state('app.pruebaPlantasBD', {
       url: '/pruebaPlantasBD',
