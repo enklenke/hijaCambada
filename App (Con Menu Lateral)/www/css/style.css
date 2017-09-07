@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-/* PORTAA */
-
-@verde: #80b5a4;
-.fondoPortada{
-	background-image: url("../img/pantallas/fondoPortada.jpg");
-	background-attachment: cover;
-}
-=======
 /* COLORES DECLARADOS */
 .colorVerde{
 	background: #80b5a4 !important;
@@ -55,4 +46,3 @@ div.hrFull{
 }
 
 
->>>>>>> 47da40a621e3a820ae1fb06251bb507c9b576010
