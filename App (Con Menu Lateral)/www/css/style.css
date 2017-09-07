@@ -1,5 +1,7 @@
 /* PORTAA */
+
+@verde: #80b5a4;
 .fondoPortada{
 	background-image: url("../img/pantallas/fondoPortada.jpg");
+	background-attachment: cover;
 }
-
