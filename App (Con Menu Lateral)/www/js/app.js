@@ -43,12 +43,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     }
   })
 
-  // Pantalla principal de plantas
-  .state('app.principalPlantas', {
-    url: '/principalPlantas',
+  // Pantalla sencilla compuesta
+  .state('app.sencillaCompuesta', {
+    url: '/sencillaCompuesta',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/principalPlantas.html',
+        templateUrl: 'templates/plantas/sencillaCompuesta.html',
         controller: 'PlantasCtrl'
       }
     }

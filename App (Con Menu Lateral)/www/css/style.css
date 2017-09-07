@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* PORTAA */
 
 @verde: #80b5a4;
@@ -5,3 +6,53 @@
 	background-image: url("../img/pantallas/fondoPortada.jpg");
 	background-attachment: cover;
 }
+=======
+/* COLORES DECLARADOS */
+.colorVerde{
+	background: #80b5a4 !important;
+}
+.colorNegro3D{
+	background: #3d3d3d;
+}
+.colorTransparente{
+	background-color: transparent !important;
+}
+
+/* MENU */
+.item-content {
+   background:#3d3d3d !important;
+   color: #ffffff !important;
+}
+
+
+/* PORTADA */
+.fondoPortada {
+    background-size: contain;
+    background-image: url(../img/pantallas/fondoPortada.jpg);
+}
+
+/* PANTALLAS */
+.divFull{
+	width: 100%;
+	height: 100vh;
+}
+.hrFull{
+	width: 80%;
+	border: 1px solid white;
+}
+div.hrFull{
+	height: 10%;
+}
+.div1{
+	position: relative;
+	width: 100%;
+	height: 45%;
+}
+.div2{
+	position: relative;
+	width: 100%;
+	height: 45%;
+}
+
+
+>>>>>>> 47da40a621e3a820ae1fb06251bb507c9b576010
