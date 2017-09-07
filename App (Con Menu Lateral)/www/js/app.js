@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -32,6 +32,67 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  // Pantalla principal de plantas
+  .state('app.principalPlantas', {
+    url: '/principalPlantas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/principalPlantas.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla para probar array de plantas
+  .state('app.pruebaPlantasBD', {
+      url: '/pruebaPlantasBD',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/plantas/pruebaPlantasBD.html',
+          controller: 'PlantasCtrl'
+        }
+      }
+    })
+  // Pantalla principal de pajaros
+  .state('app.principalPajaros', {
+    url: '/principalPajaros',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/pajaros/principalPajaros.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+  // Pantalla principal de mapa
+  .state('app.principalMapa', {
+    url: '/principalMapa',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/mapa/principalMapa.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+  // Pantalla principal de esquema
+  .state('app.principalEsquema', {
+    url: '/principalEsquema',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/principalEsquema.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+  // Pantalla principal de video
+  .state('app.principalVideo', {
+    url: '/principalVideo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/video/principalVideo.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+  // Borrar
   .state('app.search', {
     url: '/search',
     views: {
@@ -49,6 +110,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    //Pantalla principal (la pantalla que se muestra al iniciar la app)
+    .state('app.principal', {
+      url: '/principal',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/principal.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+    // Borrar
     .state('app.playlists', {
       url: '/playlists',
       views: {
@@ -69,5 +141,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  //$urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/principal');
 });
