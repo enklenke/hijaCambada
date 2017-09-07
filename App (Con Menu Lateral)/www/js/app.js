@@ -32,6 +32,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     controller: 'AppCtrl'
   })
 
+  //Pantalla principal (la pantalla que se muestra al iniciar la app)
+  .state('app.principal', {
+    url: '/principal',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/principal.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+
   // Pantalla principal de plantas
   .state('app.principalPlantas', {
     url: '/principalPlantas',
@@ -107,16 +118,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       views: {
         'menuContent': {
           templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    //Pantalla principal (la pantalla que se muestra al iniciar la app)
-    .state('app.principal', {
-      url: '/principal',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/principal.html',
-          controller: 'PlaylistsCtrl'
         }
       }
     })
