@@ -63,6 +63,58 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla rugosa lisa
+  .state('app.rugosaLisa', {
+    url: '/rugosaLisa',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/rugosaLisa.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla tipo de bordes
+  .state('app.tipoBorde', {
+    url: '/tipoBorde',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/tipoBorde.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //********* PLANTAS *********
+  // Pantalla planta follao
+  .state('app.follao', {
+    url: '/follao',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/follao.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta naranjero
+  .state('app.naranjero', {
+    url: '/naranjero',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/naranjero.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta faya
+  .state('app.faya', {
+    url: '/faya',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/faya.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //***************************
   // Pantalla para probar array de plantas
   .state('app.pruebaPlantasBD', {
       url: '/pruebaPlantasBD',
