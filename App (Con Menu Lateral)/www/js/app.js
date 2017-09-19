@@ -94,6 +94,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla planta palo blanco
+  .state('app.paloBlanco', {
+    url: '/paloBlanco',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/paloBlanco.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
   // Pantalla planta sauco
   .state('app.sauco', {
     url: '/sauco',
