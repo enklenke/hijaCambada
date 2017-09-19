@@ -43,12 +43,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     }
   })
 
+  // *************** HOJAS **************
   // Pantalla sencilla y compuesta
   .state('app.sencillaCompuesta', {
     url: '/sencillaCompuesta',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/sencillaCompuesta.html',
+        templateUrl: 'templates/hojas/sencillaCompuesta.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -58,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/opuestaAlterna',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/opuestaAlterna.html',
+        templateUrl: 'templates/hojas/opuestaAlterna.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -68,7 +69,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/rugosaLisa',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/rugosaLisa.html',
+        templateUrl: 'templates/hojas/rugosaLisa.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -78,11 +79,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/tipoBorde',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/tipoBorde.html',
+        templateUrl: 'templates/hojas/tipoBorde.html',
         controller: 'PlantasCtrl'
       }
     }
   })
+  // Pantalla hojas pequeñas y grandes
+  .state('app.hojaPequeGrande', {
+    url: '/hojaPequeGrande',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/hojaPequeGrande.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // ****************** FIN HOJAS *****************************
+
   //********* PLANTAS *********
   // Pantalla planta follao
   .state('app.follao', {
@@ -134,7 +147,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-  //***************************
+  //***************** FIN PLANTAS *******************
+  
   // Pantalla para probar array de plantas
   .state('app.pruebaPlantasBD', {
       url: '/pruebaPlantasBD',
