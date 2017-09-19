@@ -94,6 +94,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla forma vertical y horizontal
+  .state('app.formaVerticalHorizontal', {
+    url: '/formaVerticalHorizontal',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/formaVerticalHorizontal.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
   // ****************** FIN HOJAS *****************************
 
   //********* PLANTAS *********
@@ -143,6 +153,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/plantas/faya.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta brezo
+  .state('app.brezo', {
+    url: '/brezo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/brezo.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta tejo
+  .state('app.tejo', {
+    url: '/tejo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/tejo.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -239,6 +269,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   });
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
-  $urlRouterProvider.otherwise('/app/principal');
-  //$urlRouterProvider.otherwise('/app/tipoBorde');
+  //$urlRouterProvider.otherwise('/app/principal');
+  $urlRouterProvider.otherwise('/app/tipoBorde');
 });
