@@ -89,7 +89,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/hojaPequeGrande',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/hojaPequeGrande.html',
+        templateUrl: 'templates/hojas/hojaPequeGrande.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -239,6 +239,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   });
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
-  //$urlRouterProvider.otherwise('/app/principal');
-  $urlRouterProvider.otherwise('/app/tipoBorde');
+  $urlRouterProvider.otherwise('/app/principal');
+  //$urlRouterProvider.otherwise('/app/tipoBorde');
 });
