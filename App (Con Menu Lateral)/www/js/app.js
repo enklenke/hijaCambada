@@ -43,7 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     }
   })
 
-  // Pantalla sencilla compuesta
+  // Pantalla sencilla y compuesta
   .state('app.sencillaCompuesta', {
     url: '/sencillaCompuesta',
     views: {
@@ -53,7 +53,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-  // Pantalla opuesta alterna
+  // Pantalla opuesta y alterna
   .state('app.opuestaAlterna', {
     url: '/opuestaAlterna',
     views: {
@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-  // Pantalla rugosa lisa
+  // Pantalla rugosa y lisa
   .state('app.rugosaLisa', {
     url: '/rugosaLisa',
     views: {
