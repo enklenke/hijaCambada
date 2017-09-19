@@ -46,9 +46,9 @@
 	margin: auto;
 }
 .divImgGrande{
-	width: 90;
+	width: 90%;
 	margin: auto;
-	padding-top: 10%;
+	vertical-align: middle;
 }
 
 /* Separador */
