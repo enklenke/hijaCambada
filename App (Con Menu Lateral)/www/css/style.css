@@ -34,7 +34,7 @@
 }
 .div25{
 	position: relative;
-	width: 100;
+	width: 100%;
 	height: 20%;
 }
 .divImg {
@@ -42,7 +42,7 @@
 	margin: auto;
 }
 .divImg2 {
-	width: 35%;
+	width: 100%;
 	margin: auto;
 }
 .divImgGrande{
