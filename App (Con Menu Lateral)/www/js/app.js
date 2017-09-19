@@ -148,7 +148,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     }
   })
   //***************** FIN PLANTAS *******************
-  
+
   // Pantalla para probar array de plantas
   .state('app.pruebaPlantasBD', {
       url: '/pruebaPlantasBD',
@@ -239,5 +239,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   });
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
-  $urlRouterProvider.otherwise('/app/principal');
+  //$urlRouterProvider.otherwise('/app/principal');
+  $urlRouterProvider.otherwise('/app/tipoBorde');
 });
