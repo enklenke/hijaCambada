@@ -144,7 +144,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-  // Pantalla hojas mayores y menores
+  // Pantalla mayores y menores
   .state('app.mayoresMenores', {
     url: '/mayoresMenores',
     views: {
@@ -160,6 +160,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/hojas/glandulas.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  // Pantalla hojas mayores y menores
+  .state('app.hojasMayoresMenores', {
+    url: '/hojasMayoresMenores',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/hojasMayoresMenores.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla nervios centrales
+  .state('app.nervioCentral', {
+    url: '/nervioCentral',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/nervioCentral.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -243,6 +264,46 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/plantas/barbuzano.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta sanguino
+  .state('app.sanguino', {
+    url: '/sanguino',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/sanguino.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta mocan
+  .state('app.mocan', {
+    url: '/mocan',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/mocan.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta hija
+  .state('app.hija', {
+    url: '/hija',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/hija.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta madroño
+  .state('app.madrono', {
+    url: '/madrono',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/madrono.html',
         controller: 'PlantasCtrl'
       }
     }
@@ -339,6 +400,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   });
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
-  //$urlRouterProvider.otherwise('/app/principal');
-  $urlRouterProvider.otherwise('/app/tipoBorde');
+  $urlRouterProvider.otherwise('/app/principal');
+  //$urlRouterProvider.otherwise('/app/tipoBorde');
 });
