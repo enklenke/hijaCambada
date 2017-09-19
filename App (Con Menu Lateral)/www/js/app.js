@@ -104,6 +104,66 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla con abultamientos y sin abultamientos
+  .state('app.abultamientos', {
+    url: '/abultamientos',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/abultamientos.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla hoja agallas y glandulas
+  .state('app.agallasGlandulas', {
+    url: '/agallasGlandulas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/agallasGlandulas.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla hojas alargadas y redondeadas
+  .state('app.alargadasRedondeadas', {
+    url: '/alargadasRedondeadas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/alargadasRedondeadas.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla hoja con nervios
+  .state('app.nervios', {
+    url: '/nervios',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/nervios.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla hojas mayores y menores
+  .state('app.mayoresMenores', {
+    url: '/mayoresMenores',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/mayoresMenores.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla hoja glandulas
+  .state('app.glandulas', {
+    url: '/glandulas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/glandulas.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
   // ****************** FIN HOJAS *****************************
 
   //********* PLANTAS *********
@@ -173,6 +233,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/plantas/tejo.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta barbuzano
+  .state('app.barbuzano', {
+    url: '/barbuzano',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/barbuzano.html',
         controller: 'PlantasCtrl'
       }
     }
