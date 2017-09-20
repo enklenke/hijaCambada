@@ -1,12 +1,20 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="false"> <!-- Hacemos que siempre este visible (o no) el boton del menu -->
   <ion-side-menu-content>
     <ion-nav-bar class="bar-stable colorVerde"> <!-- Cambiamos el color de la barra -->
-      <ion-nav-back-button>
+
+      <ion-nav-back-button class="button-clear">
+        <i class="ion-arrow-left-c"></i> Atrás
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
+
+        <!-- Boton home (para volver a la pantalla principal) con estilo css. Tiene asignada una funcion  -->
+        <div class="home">
+          <i class="ion-home" ng-click="home()"></i>
+        </div>
+
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>

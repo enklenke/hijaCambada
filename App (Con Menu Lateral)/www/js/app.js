@@ -185,6 +185,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla rojizas y mismo color
+  .state('app.rojizaMismoColor', {
+    url: '/rojizaMismoColor',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/rojizaMismoColor.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla puntas afiladas redondeadas
+  .state('app.puntaAfiladaRedondeada', {
+    url: '/puntaAfiladaRedondeada',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/hojas/puntaAfiladaRedondeada.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
   // ****************** FIN HOJAS *****************************
 
   //********* PLANTAS *********
@@ -308,6 +328,76 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // Pantalla planta til
+  .state('app.til', {
+    url: '/til',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/til.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta laurel
+  .state('app.laurel', {
+    url: '/laurel',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/laurel.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta viñatigo
+  .state('app.vinatigo', {
+    url: '/vinatigo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/vinatigo.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta delfino
+  .state('app.delfino', {
+    url: '/delfino',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/delfino.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta aderno
+  .state('app.aderno', {
+    url: '/aderno',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/aderno.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta marmolan
+  .state('app.marmolan', {
+    url: '/marmolan',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/marmolan.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // Pantalla planta acevino
+  .state('app.acevino', {
+    url: '/acevino',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/acevino.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
   //***************** FIN PLANTAS *******************
 
   // Pantalla para probar array de plantas
@@ -401,5 +491,4 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
   $urlRouterProvider.otherwise('/app/principal');
-  //$urlRouterProvider.otherwise('/app/tipoBorde');
 });
