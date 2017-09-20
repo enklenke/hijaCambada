@@ -1,7 +1,16 @@
 angular.module('starter.plantasController', [])
 
 // Controller para manejar los datos de las plantas
-.controller('PlantasCtrl', function($scope) {
+.controller('PlantasCtrl', function($scope, $ionicHistory) {
+
+  // Funcion para volver al home.
+  $scope.atras = function()
+    {
+        //$ionicHistory.goBack();                           //This doesn't work
+        window.history.back();                          //This works
+        //alert('code to go back called. Did it work?');  //For testing
+    }
+
    // Creamos un array con los datos de cada planta, usando $scope para poder llamarlo desde el html.
   $scope.plantas = [
   	{ id: 1, nombre: 'Brezo'},
@@ -22,6 +31,16 @@ angular.module('starter.plantasController', [])
 
 
 }) // Fin del controller
+
+.controller('AppCtrl', function($scope, $ionicHistory) 
+{
+    $scope.goBackHandler = function()
+    {
+        $ionicHistory.goBack();                           //This doesn't work
+        //window.history.back();                          //This works
+        //alert('code to go back called. Did it work?');  //For testing
+    }
+});
 
 
 

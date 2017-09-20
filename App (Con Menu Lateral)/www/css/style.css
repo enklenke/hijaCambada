@@ -26,6 +26,31 @@
     font-size: 30px;
 }
 
+.hideHome{
+	z-index: -10;
+}
+
+.home2{
+	position: absolute;
+    right: 0px;
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.botonAtras{
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    z-index: 30;
+}
+
+.pngAtras{
+	width: 60px;
+    bottom: 0px;
+    vertical-align: bottom;
+    margin: 0px 0px 20px 20px;
+    position: absolute;
+}
 
 /* PORTADA */
 .fondoPortada {

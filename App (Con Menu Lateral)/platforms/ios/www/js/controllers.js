@@ -1,6 +1,14 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
+
+  // Funcion para ir a la pantalla principal.
+  $scope.home = function() {
+
+    $state.go("app");
+
+  };
+
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -50,7 +58,10 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+  
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+;
