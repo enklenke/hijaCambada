@@ -16,7 +16,7 @@
 }
 
 img {
-	width: 100%;
+	width: 96%;
 }
 
 /* BOTON HOME */
@@ -62,6 +62,12 @@ img {
     height: 100vh;
     background-repeat: no-repeat;
     background-image: url(../img/pantallas/fondoPortada.jpg);
+}
+
+.letrasPortada{
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 
 /* PANTALLAS */
