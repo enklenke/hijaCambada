@@ -54,7 +54,9 @@
 
 /* PORTADA */
 .fondoPortada {
-    background-size: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
     background-image: url(../img/pantallas/fondoPortada.jpg);
 }
 
@@ -94,6 +96,11 @@
 }
 div.hrFull{
 	height: 10%;
+}
+
+/*titulos fuera en android*/
+.platform-android .bar .title {
+    display: none;
 }
 
 
