@@ -15,6 +15,10 @@
    color: #ffffff !important;
 }
 
+img {
+	width: 100%;
+}
+
 /* BOTON HOME */
 .home{
 	width: 38px;
