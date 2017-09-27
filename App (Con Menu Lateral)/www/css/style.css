@@ -54,7 +54,7 @@
 
 /* PORTADA */
 .fondoPortada {
-    background-size: contain;
+    background-size: 100%;
     background-image: url(../img/pantallas/fondoPortada.jpg);
 }
 

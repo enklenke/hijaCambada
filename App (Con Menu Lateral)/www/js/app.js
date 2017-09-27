@@ -390,12 +390,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-  // Pantalla planta acevino
-  .state('app.acevino', {
-    url: '/acevino',
+  // Pantalla planta acebino
+  .state('app.acebino', {
+    url: '/acebino',
     views: {
       'menuContent': {
-        templateUrl: 'templates/plantas/acevino.html',
+        templateUrl: 'templates/plantas/acebino.html',
         controller: 'PlantasCtrl'
       }
     }
