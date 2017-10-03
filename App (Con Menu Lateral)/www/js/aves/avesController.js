@@ -3,17 +3,6 @@ angular.module('starter.avesController', [])
 // Controller para manejar los datos de las aves
 .controller('AvesCtrl', function($scope, $ionicHistory, $state) {
 
-  // Funcion para volver atras desde los pajaros.
-  $scope.atrasAves = function()
-    {
-        //$ionicHistory.goBack();                           //This doesn't work
-        window.history.back();                          //This works
-        //alert('code to go back called. Did it work?');  //For testing
-
-        // Llamamos la funcion que para el sonido que suena
-        $scope.stopSonido();
-    }
-
 
 // Creamos las variables con los sonidos de las aves
 var audioCuervo = new Audio('audio/sonidos-aves/cuervo.mp3');

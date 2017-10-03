@@ -102,8 +102,8 @@ img {
 
 .pngArbolMas{
     width: 100px;
-    top: 420px;
-    right: 215px;
+    top: 15px;
+    right: 15px;
     vertical-align: top;
     position: absolute;
 }
@@ -117,10 +117,18 @@ img {
     z-index: 30;
 }
 
+.pngArbolGrandeAtras{
+    width: 80px;
+    top: 510px;
+    right: 290px;
+    vertical-align: top;
+    position: absolute;
+}
+
 .pngArbolAtras{
-    width: 100px;
-    top: 15px;
-    right: 15px;
+    width: 80px;
+    top: 380px;
+    right: 255px;
     vertical-align: top;
     position: absolute;
 }
