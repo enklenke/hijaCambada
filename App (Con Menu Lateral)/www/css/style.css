@@ -210,13 +210,99 @@ div.hrFull{
 	height: 100vh;
 }
 
-/*Mapa*/
-.miscroll{
+/*Puntos del mapa*/
+.imagen-mapa{ /*Mapa background*/
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	background-image: url('./../img/mapa/mapa.png');
+	background-size: 100% 100%;
+	height: 100vh;
 }
 
-.imagen-mapa{
-	width: 100%;
+.imagen-mapa img{
+	width: 30px;
 }
+
+						.puntoUno {
+						    position: absolute;
+						    top: 85%;
+						    left: 4%;
+						}
+
+						.puntoDos {
+						    position: absolute;
+								top: 83%;
+								left: 23%;
+						}
+
+						.puntoTres{
+							position: absolute;
+							top: 79%;
+							left: 32%;
+						}
+
+						.puntoCuatro{
+							position: absolute;
+							top: 73%;
+							left: 23%;
+						}
+
+						.puntoCinco{
+							position: absolute;
+							top: 71%;
+							left: 31%;
+						}
+						.puntoSeis{
+							position: absolute;
+							top: 71%;
+							left: 50%;
+						}
+						.puntoSiete{
+							position: absolute;
+							top: 76%;
+							left: 61%;
+						}
+						.puntoOcho{
+							position: absolute;
+							top: 54%;
+							left: 31%;
+						}
+						.puntoNueve{
+							position: absolute;
+							top: 45%;
+						left: 62%;
+						}
+						.puntoDiez{
+							position: absolute;
+							top: 40%;
+							left: 65%;
+						}
+						.puntoOnce{
+							position: absolute;
+							top: 38%;
+						left: 76%;
+						}
+						.puntoDoce{
+							position: absolute;
+							top: 35%;
+							left: 89%;
+						}
+						.puntoTrece{
+							position: absolute;
+							top: 26%;
+							left: 67%;
+						}
+						.puntoCatorce{
+							position: absolute;
+							top: 21%;
+							left: 81%;
+						}
+						.puntoQuince{
+							position: absolute;
+							top: 8%;
+							left: 80%;
+						}
+						.puntoDiesiceis{
+							position: absolute;
+							top: 3%;
+							left: 78%;
+						}
