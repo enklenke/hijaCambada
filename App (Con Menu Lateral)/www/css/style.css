@@ -166,10 +166,17 @@ div.hrFull{
 }
 
 
-/*Mapa*/
+/*Mapa pantalla principal*/
 .mapa{
 	width: 100%;
 	background-image: url('./../img/mapa/pantalla-mapa.png');
 	background-size: cover;
-	height: 99vh;
+	height: 100vh;
+}
+
+/*Mapa*/
+.miscroll{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
