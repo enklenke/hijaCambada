@@ -114,3 +114,21 @@ div.hrFull{
 }
 
 
+/*Aves pantalla*/
+.div33
+{
+	width: 33%;
+	position: relative;
+	float: right;
+	margin: 0px !important;
+	padding: 0px !important;
+	height: 33%;
+}
+
+.div100{
+	margin: 0px;
+}
+
+.div33 img{
+	width: 100%;
+}
