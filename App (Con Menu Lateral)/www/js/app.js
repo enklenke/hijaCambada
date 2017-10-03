@@ -435,7 +435,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-  // //***************** FIN PAJAROS //*****************
+
+  // Pantalla principal del pajaro cuervo
+  .state('app.pajaroCuervo', {
+    url: '/pajaroCuervo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroCuervo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+  // ***************** FIN PAJAROS *****************
+
+  // //***************** MAPA *****************
   // Pantalla principal de mapa
   .state('app.principalMapa', {
     url: '/principalMapa',
@@ -446,6 +459,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+
+  .state('app.principalMapaMenu', {
+    url: '/principalMapaMenu',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/mapa/principalMapaMenu.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+  // ***************** FIN MAPA //*****************
 
   // //***************** ESQUEMA //*****************
   // Pantalla principal de esquema (donde estan las letras de esquema)
