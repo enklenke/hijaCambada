@@ -100,38 +100,19 @@ img {
     z-index: 30;
 }
 
-.pngArbolMas{
-    width: 100px;
-    top: 15px;
-    right: 15px;
-    vertical-align: top;
-    position: absolute;
-}
+
 
 /* Boton atras en la pantalla arboles */
-.botonArbolAtras{
-    width: 120px;
-    height: 100%;
+.botonArbolAtras {
     position: absolute;
-    right: 0px;
     z-index: 30;
+    width: 70px;
+    bottom: 0px;
+    margin-bottom: 10px;
+    left: 18px;
 }
 
-.pngArbolGrandeAtras{
-    width: 80px;
-    top: 510px;
-    right: 290px;
-    vertical-align: top;
-    position: absolute;
-}
 
-.pngArbolAtras{
-    width: 80px;
-    top: 380px;
-    right: 255px;
-    vertical-align: top;
-    position: absolute;
-}
 
 /* PORTADA */
 .fondoPortada {
