@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController', 'starter.avesController', 'starter.esquemaController', 'ui.router'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController', 'starter.avesController', 'starter.esquemaController', 'starter.mapaController', 'ui.router'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -442,6 +442,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/aves/pajaroCuervo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro gavilan
+  .state('app.pajaroGavilan', {
+    url: '/pajaroGavilan',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroGavilan.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro herrerillo
+  .state('app.pajaroHerrerillo', {
+    url: '/pajaroHerrerillo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroHerrerillo.html',
         controller: 'AvesCtrl'
       }
     }
