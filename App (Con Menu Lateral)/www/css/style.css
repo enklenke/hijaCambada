@@ -56,6 +56,22 @@ img {
     position: absolute;
 }
 
+.botonAudio{
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    z-index: 30;
+}
+
+.pngAudio{
+    width: 300px;
+    top: 0px;
+    right: 0px;
+    vertical-align: top;
+    position: absolute;
+}
+
 /* PORTADA */
 .fondoPortada {
     background-size: cover;
@@ -143,6 +159,26 @@ div.hrFull{
 .div33 img{
 	width: 100%;
 }
+
+.divImgAveFull{
+    width: 100%;
+    height: 100vh;
+}
+
+.divImgAveFull img{
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+
+.pngAtrasAve{
+    width: 60px;
+    bottom: 0px;
+    vertical-align: bottom;
+    margin: 0px 0px 52px 10px;
+    position: absolute;
+}
+/************** Fin pantallas de aves **************/
 
 /*Esquema pantalla*/
 .esquema{
