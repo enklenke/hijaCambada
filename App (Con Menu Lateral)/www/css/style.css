@@ -41,6 +41,7 @@ img {
     margin-right: 10px;
 }
 
+/* Boton atras en la pantalla hojas y pajaros */
 .botonAtras{
     width: 100px;
     height: 100%;
@@ -56,6 +57,7 @@ img {
     position: absolute;
 }
 
+/* Boton atras en la pantalla audio (aves) */
 .botonAudio{
     width: 100px;
     height: 100%;
@@ -69,6 +71,23 @@ img {
     top: 0px;
     right: 0px;
     vertical-align: top;
+    position: absolute;
+}
+
+/* Boton atras en la pantalla esquema */
+.botonAtrasEsquema{
+    width: 100px;
+    height: auto;
+    position: relative;
+    z-index: 30;
+    top: -30px;
+}
+
+.pngAtrasEsquema{
+    width: 50px;
+    bottom: 0px;
+    vertical-align: bottom;
+    margin: 0px 0 -25px 15px;
     position: absolute;
 }
 
