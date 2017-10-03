@@ -38,6 +38,11 @@
                         }
                     ]
                 }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "NSMicrophoneUsageDescription": []
+                }
             }
         }
     },

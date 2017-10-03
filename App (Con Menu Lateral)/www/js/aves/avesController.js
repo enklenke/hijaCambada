@@ -9,6 +9,9 @@ angular.module('starter.avesController', [])
         //$ionicHistory.goBack();                           //This doesn't work
         window.history.back();                          //This works
         //alert('code to go back called. Did it work?');  //For testing
+
+        // Llamamos la funcion que para el sonido que suena
+        $scope.stopSonido();
     }
 
 
@@ -22,47 +25,133 @@ var audioPalomaRabiche = new Audio('audio/sonidos-aves/paloma-rabiche.mp3');
 var audioPalomaTurque = new Audio('audio/sonidos-aves/paloma-turque.mp3');
 var audioPetirrojo = new Audio('audio/sonidos-aves/petirrojo.mp3');
 
+// Creamos una variable para hacer la condicion de si suena o no suena.
+var seOye = "no";
+
 
   // Funciones con los sonidos de las aves
   $scope.playCuervo = function() {
-    var audio = new Audio('audio/sonidos-aves/cuervo.mp3');
-    audio.play();
+    audioCuervo.play();
+    seOye = "cuervo";
   };
 
   $scope.playGavilan = function() {
-    var audio = new Audio('audio/sonidos-aves/gavilan.mp3');
-    audio.play();
+    audioGavilan.play();
+    seOye = "gavilan";
   };
 
   $scope.playHerrerillo = function() {
-    var audio = new Audio('audio/sonidos-aves/herrerillo.mp3');
-    audio.play();
+    audioHerrerillo.play();
+    seOye = "herrerillo";
   };
 
   $scope.playMirlo = function() {
-    var audio = new Audio('audio/sonidos-aves/mirlo.mp3');
-    audio.play();
+    audioMirlo.play();
+    seOye = "mirlo";
   };
 
   $scope.playMosquitero = function() {
-    var audio = new Audio('audio/sonidos-aves/mosquitero.mp3');
-    audio.play();
+    audioMosquitero.play();
+    seOye = "mosquitero";
   };
 
   $scope.playPalomaRabiche = function() {
-    var audio = new Audio('audio/sonidos-aves/paloma-rabiche.mp3');
-    audio.play();
+    audioPalomaRabiche.play();
+    seOye = "paloma-rabiche";
   };
 
   $scope.playPalomaTurque = function() {
-    var audio = new Audio('audio/sonidos-aves/paloma-turque.mp3');
-    audio.play();
+    audioPalomaTurque.play();
+    seOye = "paloma-turque";
   };
 
   $scope.playPetirrojo = function() {
-    var audio = new Audio('audio/sonidos-aves/petirrojo.mp3');
-    audio.play();
+    audioPetirrojo.play();
+    seOye = "petirrojo";
   };
+
+
+  // Funcion que para un sonido si esta sonando y tambien va a la pantalla anterior (es el boton atras con mas funcionalidad)
+  $scope.stopSonido = function(){
+    // Si suena el cuervo, lo paramos y modificamos la variable seOye
+    if (seOye == "cuervo"){
+          audioCuervo.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el gavilan, lo paramos y modificamos la variable seOye
+    else if (seOye == "gavilan"){
+          audioGavilan.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el herrerillo, lo paramos y modificamos la variable seOye
+    else if (seOye == "herrerillo"){
+          audioHerrerillo.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el mirlo, lo paramos y modificamos la variable seOye
+    else if (seOye == "mirlo"){
+          audioMirlo.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el mosquitero, lo paramos y modificamos la variable seOye
+    else if (seOye == "mosquitero"){
+          audioMosquitero.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el paloma-rabiche, lo paramos y modificamos la variable seOye
+    else if (seOye == "paloma-rabiche"){
+          audioPalomaRabiche.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el paloma-turque, lo paramos y modificamos la variable seOye
+    else if (seOye == "paloma-turque"){
+          audioPalomaTurque.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el petirrojo, lo paramos y modificamos la variable seOye
+    else if (seOye == "petirrojo"){
+          audioPetirrojo.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Sino suena nada pues vamos atras.
+    else{
+        // Volvemos atras.
+        window.history.back();
+    }
+
+  }
 
 
 }) // Fin del controller
