@@ -240,9 +240,9 @@ div.hrFull{
 
 .pngAtrasAve{
     width: 60px;
-    bottom: 0px;
+    top: 25px;
     vertical-align: bottom;
-    margin: 0px 0px 52px 10px;
+    margin: 0px 0 50px 10px;
     position: absolute;
 }
 /************** Fin pantallas de aves **************/
