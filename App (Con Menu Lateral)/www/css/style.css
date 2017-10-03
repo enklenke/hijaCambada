@@ -207,14 +207,20 @@ div.hrFull{
     margin: 0 auto;
 }
 
-.div33
+.divAves50
 {
-	width: 33%;
+	width: 50%;
 	position: relative;
 	float: left;
 	margin: 0px !important;
 	padding: 0px !important;
-	height: 33%;
+	height: auto;
+}
+.divAves50 img
+{
+	width: 100%;
+	height: 24%;
+	margin-bottom: -10px;
 }
 
 .div33 img{
@@ -337,8 +343,8 @@ div.hrFull{
 						}
 						.puntoOcho{
 							position: absolute;
-							top: 54%;
-							left: 31%;
+							top: 55%;
+							left: 71%;
 						}
 						.puntoNueve{
 							position: absolute;
