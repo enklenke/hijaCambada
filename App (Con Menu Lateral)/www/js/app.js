@@ -468,6 +468,72 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+
+  // Pantalla principal del pajaro mirlo
+  .state('app.pajaroMirlo', {
+    url: '/pajaroMirlo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroMirlo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro mosquitero
+  .state('app.pajaroMosquitero', {
+    url: '/pajaroMosquitero',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroMosquitero.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro paloma rabiche
+  .state('app.pajaroPalomaRabiche', {
+    url: '/pajaroPalomaRabiche',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPalomaRabiche.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro paloma turque
+  .state('app.pajaroPalomaTurque', {
+    url: '/pajaroPalomaTurque',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPalomaTurque.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro petirrojo
+  .state('app.pajaroPetirrojo', {
+    url: '/pajaroPetirrojo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPetirrojo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro pinzon
+  .state('app.pajaroPinzon', {
+    url: '/pajaroPinzon',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPinzon.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
   // ***************** FIN PAJAROS *****************
 
   // //***************** MAPA *****************
