@@ -52,9 +52,6 @@ angular.module('starter.controllers', [])
     { title: 'Cowbell', id: 6 }
   ];
 
-  $scope.prueba = function(){
-    alert("probando");
-  }
 
 })
 

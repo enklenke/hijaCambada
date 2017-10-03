@@ -455,7 +455,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/mapa/principalMapa.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'MapaCtrl'
       }
     }
   })
@@ -465,7 +465,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/mapa/principalMapaMenu.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'MapaCtrl'
       }
     }
   })
