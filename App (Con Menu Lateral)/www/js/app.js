@@ -412,16 +412,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
         }
       }
     })
-  // Pantalla principal de pajaros
+  // //***************** PAJAROS //*****************
+  // Pantalla principal de pajaros (donde salen las letras)
   .state('app.principalPajaros', {
     url: '/principalPajaros',
     views: {
       'menuContent': {
         templateUrl: 'templates/pajaros/principalPajaros.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'AvesCtrl'
       }
     }
   })
+  // Pantalla principal de pajaros (donde salen las letras)
+  .state('app.principalPajarosMenu', {
+    url: '/principalPajarosMenu',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/pajaros/principalPajarosMenu.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+  // //***************** FIN PAJAROS //*****************
   // Pantalla principal de mapa
   .state('app.principalMapa', {
     url: '/principalMapa',
@@ -432,6 +444,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+  // //***************** ESQUEMA //*****************
   // Pantalla principal de esquema
   .state('app.principalEsquema', {
     url: '/principalEsquema',
@@ -453,6 +466,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+<<<<<<< HEAD
 
   //Pantalla EsqueMa forma
   .state('app.esquemaForma', {
@@ -468,6 +482,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
 
 
 
+=======
+  // //***************** FIN ESQUEMA //*****************
+>>>>>>> 8e137afc4a4d51c62cdd1a183b1c6cac9b2043f7
 
   // Pantalla principal de video
   .state('app.principalVideo', {
