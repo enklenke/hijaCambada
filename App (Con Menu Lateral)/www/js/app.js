@@ -616,6 +616,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   })
   // //***************** FIN ESQUEMA //*****************
 
+  // ************** ARBOLES *******************
+   //Pantalla Arbol 1
+  .state('app.arbol1', {
+    url: '/arbol1',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol1.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 1.1
+  .state('app.arbol1Descripcion', {
+    url: '/arbol1Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/arbol1Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // ************FIN ARBOLES *****************
+
   // Pantalla principal de video
   .state('app.principalVideo', {
     url: '/principalVideo',
@@ -666,5 +689,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   });
   // if none of the above states are matched, use this as the fallback
   //$urlRouterProvider.otherwise('/app/playlists');
-  $urlRouterProvider.otherwise('/app/principal');
+  //$urlRouterProvider.otherwise('/app/principal');
+  $urlRouterProvider.otherwise('/app/arbol1');
 });
