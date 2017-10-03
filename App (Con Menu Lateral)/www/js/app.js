@@ -454,6 +454,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     }
   })
 
+  //Pantalla EsqueMa forma
+  .state('app.esquemaForma', {
+    url: '/esquemaForma',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/esquemaForma.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
 
 
 

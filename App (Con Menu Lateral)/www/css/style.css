@@ -141,3 +141,16 @@ div.hrFull{
 	background-size: cover;
 	height: 100vh;
 }
+
+.EsquemaContenedor {
+	height: 32vh;
+	border-bottom: 1px solid white;
+}
+.EsquemaContenedor img{
+	width: 100%;
+	height: 100%;
+}
+
+.img100{
+	width: 100%;
+}
