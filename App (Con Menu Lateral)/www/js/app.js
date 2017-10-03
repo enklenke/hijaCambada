@@ -466,7 +466,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-<<<<<<< HEAD
 
   //Pantalla EsqueMa forma
   .state('app.esquemaForma', {
@@ -478,14 +477,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
-
-
-
-
-=======
   // //***************** FIN ESQUEMA //*****************
->>>>>>> 8e137afc4a4d51c62cdd1a183b1c6cac9b2043f7
-
   // Pantalla principal de video
   .state('app.principalVideo', {
     url: '/principalVideo',
