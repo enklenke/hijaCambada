@@ -442,6 +442,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+
+  // Pantalla principal de esquema menu
+  .state('app.principalEsquemaMenu', {
+    url: '/principalEsquemaMenu',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/principalEsquemaMenu.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+
+
+
+
+
+
   // Pantalla principal de video
   .state('app.principalVideo', {
     url: '/principalVideo',
