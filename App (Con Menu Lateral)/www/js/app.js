@@ -418,7 +418,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/principalPajaros',
     views: {
       'menuContent': {
-        templateUrl: 'templates/pajaros/principalPajaros.html',
+        templateUrl: 'templates/aves/principalPajaros.html',
         controller: 'AvesCtrl'
       }
     }
@@ -428,7 +428,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/principalPajarosMenu',
     views: {
       'menuContent': {
-        templateUrl: 'templates/pajaros/principalPajarosMenu.html',
+        templateUrl: 'templates/aves/principalPajarosMenu.html',
         controller: 'AvesCtrl'
       }
     }
