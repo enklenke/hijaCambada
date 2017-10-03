@@ -108,13 +108,28 @@ div.hrFull{
 	height: 10%;
 }
 
-/*titulos fuera en android*/
+/*titulos fuera en android (en el bar header)*/
 .platform-android .bar .title {
     display: none;
 }
 
 
 /*Aves pantalla*/
+/* Pantalla principal ave (donde estan las letras) */
+.aves{
+    width: 100%;
+    background-image: url('../img/aves/botones/pantalla-aves.png');
+    background-size: cover;
+    height: 100vh; 
+}
+
+/* Pantalla donde se muestras los pajaros */
+.divAvesFull{
+    width: 101%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
 .div33
 {
 	width: 33%;
@@ -125,14 +140,9 @@ div.hrFull{
 	height: 33%;
 }
 
-.div100{
-	margin: 0px;
-}
-
 .div33 img{
 	width: 100%;
 }
-
 
 /*Esquema pantalla*/
 .esquema{
