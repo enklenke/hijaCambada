@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController', 'ui.router'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController', 'starter.avesController', 'starter.esquemaController', 'starter.mapaController', 'ui.router'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -412,36 +412,548 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
         }
       }
     })
-  // Pantalla principal de pajaros
+
+  // //***************** PAJAROS //*****************
+  // Pantalla principal de pajaros (donde salen las letras)
   .state('app.principalPajaros', {
     url: '/principalPajaros',
     views: {
       'menuContent': {
-        templateUrl: 'templates/pajaros/principalPajaros.html',
-        controller: 'PlaylistsCtrl'
+        templateUrl: 'templates/aves/principalPajaros.html',
+        controller: 'AvesCtrl'
       }
     }
   })
+
+  // Pantalla principal de pajaros (donde salen las letras)
+  .state('app.principalPajarosMenu', {
+    url: '/principalPajarosMenu',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/principalPajarosMenu.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro cuervo
+  .state('app.pajaroCuervo', {
+    url: '/pajaroCuervo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroCuervo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro gavilan
+  .state('app.pajaroGavilan', {
+    url: '/pajaroGavilan',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroGavilan.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro herrerillo
+  .state('app.pajaroHerrerillo', {
+    url: '/pajaroHerrerillo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroHerrerillo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro mirlo
+  .state('app.pajaroMirlo', {
+    url: '/pajaroMirlo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroMirlo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro mosquitero
+  .state('app.pajaroMosquitero', {
+    url: '/pajaroMosquitero',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroMosquitero.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro paloma rabiche
+  .state('app.pajaroPalomaRabiche', {
+    url: '/pajaroPalomaRabiche',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPalomaRabiche.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro paloma turque
+  .state('app.pajaroPalomaTurque', {
+    url: '/pajaroPalomaTurque',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPalomaTurque.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro petirrojo
+  .state('app.pajaroPetirrojo', {
+    url: '/pajaroPetirrojo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPetirrojo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+
+  // Pantalla principal del pajaro pinzon
+  .state('app.pajaroPinzon', {
+    url: '/pajaroPinzon',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroPinzon.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
+  // ***************** FIN PAJAROS *****************
+
+  // //***************** MAPA *****************
   // Pantalla principal de mapa
   .state('app.principalMapa', {
     url: '/principalMapa',
     views: {
       'menuContent': {
-        templateUrl: 'templates/mapa/principalMapa.html',
-        controller: 'PlaylistsCtrl'
+        templateUrl: './templates/mapa/principalMapa.html',
+        controller: 'MapaCtrl'
       }
     }
   })
-  // Pantalla principal de esquema
+
+  .state('app.principalMapaMenu', {
+    url: '/principalMapaMenu',
+    views: {
+      'menuContent': {
+        templateUrl: './templates/mapa/principalMapaMenu.html',
+        controller: 'MapaCtrl'
+      }
+    }
+  })
+  // ***************** FIN MAPA //*****************
+
+  // //***************** ESQUEMA //*****************
+  // Pantalla principal de esquema (donde estan las letras de esquema)
   .state('app.principalEsquema', {
     url: '/principalEsquema',
     views: {
       'menuContent': {
         templateUrl: 'templates/esquema/principalEsquema.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'EsquemaCtrl'
       }
     }
   })
+
+  // Pantalla principal de esquema menu (menu dentro del esquema)
+  .state('app.principalEsquemaMenu', {
+    url: '/principalEsquemaMenu',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/principalEsquemaMenu.html',
+        controller: 'EsquemaCtrl'
+      }
+    }
+  })
+
+  //Pantalla EsqueMa forma
+  .state('app.esquemaForma', {
+    url: '/esquemaForma',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/esquemaForma.html',
+        controller: 'EsquemaCtrl'
+      }
+    }
+  })
+
+  //Pantalla EsqueMa margen
+  .state('app.esquemaMargen', {
+    url: '/esquemaMargen',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/esquemaMargen.html',
+        controller: 'EsquemaCtrl'
+      }
+    }
+  })
+
+  //Pantalla EsqueMa venacion
+  .state('app.esquemaVenacion', {
+    url: '/esquemaVenacion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/esquemaVenacion.html',
+        controller: 'EsquemaCtrl'
+      }
+    }
+  })
+  // //***************** FIN ESQUEMA //*****************
+
+  // ************** ARBOLES *******************
+   //Pantalla Arbol 1
+  .state('app.arbol1', {
+    url: '/arbol1',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol1.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 1.1
+  .state('app.arbol1Descripcion', {
+    url: '/arbol1Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol1Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 2
+  .state('app.arbol2', {
+    url: '/arbol2',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol2.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 2.1
+  .state('app.arbol2Descripcion', {
+    url: '/arbol2Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol2Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 3
+  .state('app.arbol3', {
+    url: '/arbol3',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol3.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 3.1
+  .state('app.arbol3Descripcion', {
+    url: '/arbol3Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol3Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 4
+  .state('app.arbol4', {
+    url: '/arbol4',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol4.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 4.1
+  .state('app.arbol4Descripcion', {
+    url: '/arbol4Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol4Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 5
+  .state('app.arbol5', {
+    url: '/arbol5',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol5.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 5.1
+  .state('app.arbol5Descripcion', {
+    url: '/arbol5Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol5Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 6
+  .state('app.arbol6', {
+    url: '/arbol6',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol6.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 6.1
+  .state('app.arbol6Descripcion', {
+    url: '/arbol6Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol6Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 7
+  .state('app.arbol7', {
+    url: '/arbol7',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol7.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 7.1
+  .state('app.arbol7Descripcion', {
+    url: '/arbol7Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol7Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 8
+  .state('app.arbol8', {
+    url: '/arbol8',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol8.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 8.1
+  .state('app.arbol8Descripcion', {
+    url: '/arbol8Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol8Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 9
+  .state('app.arbol9', {
+    url: '/arbol9',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol9.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 9.1
+  .state('app.arbol9Descripcion', {
+    url: '/arbol9Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol9Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 10
+  .state('app.arbol10', {
+    url: '/arbol10',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol10.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 10.1
+  .state('app.arbol10Descripcion', {
+    url: '/arbol10Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol10Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 11
+  .state('app.arbol11', {
+    url: '/arbol11',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol11.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 11.1
+  .state('app.arbol11Descripcion', {
+    url: '/arbol11Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol11Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 12
+  .state('app.arbol12', {
+    url: '/arbol12',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol12.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 12.1
+  .state('app.arbol12Descripcion', {
+    url: '/arbol12Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol12Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 13
+  .state('app.arbol13', {
+    url: '/arbol13',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol13.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 13.1
+  .state('app.arbol13Descripcion', {
+    url: '/arbol13Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol13Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 14
+  .state('app.arbol14', {
+    url: '/arbol14',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol14.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 14.1
+  .state('app.arbol14Descripcion', {
+    url: '/arbol14Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol14Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 15
+  .state('app.arbol15', {
+    url: '/arbol15',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol15.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 15.1
+  .state('app.arbol15Descripcion', {
+    url: '/arbol15Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol15Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  //Pantalla Arbol 16
+  .state('app.arbol16', {
+    url: '/arbol16',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol16.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  //Pantalla Arbol 16.1
+  .state('app.arbol16Descripcion', {
+    url: '/arbol16Descripcion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/arboles/arbol16Descripcion.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+  // ************FIN ARBOLES *****************
+
   // Pantalla principal de video
   .state('app.principalVideo', {
     url: '/principalVideo',
