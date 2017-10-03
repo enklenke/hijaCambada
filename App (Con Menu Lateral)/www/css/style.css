@@ -4,7 +4,18 @@
 }
 .colorNegro3D{
 	background: #3d3d3d !important;
+
 }
+
+.tituloMenu{
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0px 0px 15px;
+
+}
+
 .colorTransparente{
 	background-color: transparent !important;
 }
@@ -27,7 +38,7 @@ img {
 
 /* BOTON HOME */
 .home{
-	width: 38px;
+		width: 38px;
     text-align: center;
     position: absolute;
     right: 0px;
@@ -142,7 +153,6 @@ img {
 .div50{
 	position: relative;
 	width: 100%;
-	height: 45%;
 }
 .div25{
 	position: relative;
