@@ -136,7 +136,7 @@ div.hrFull{
     width: 100%;
     background-image: url('../img/aves/botones/pantalla-aves.png');
     background-size: cover;
-    height: 100vh; 
+    height: 100vh;
 }
 
 /* Pantalla donde se muestras los pajaros */
@@ -190,7 +190,7 @@ div.hrFull{
 
 .EsquemaContenedor {
 	height: 32vh;
-	border-bottom: 1px solid white;
+	border-bottom: 2px solid white;
 }
 .EsquemaContenedor img{
 	width: 100%;
@@ -199,4 +199,13 @@ div.hrFull{
 
 .img100{
 	width: 100%;
+}
+
+
+/*Mapa*/
+.mapa{
+	width: 100%;
+	background-image: url('./../img/mapa/pantalla-mapa.png');
+	background-size: cover;
+	height: 99vh;
 }
