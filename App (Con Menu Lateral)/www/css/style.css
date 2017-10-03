@@ -3,7 +3,7 @@
 	background: #80b5a4 !important;
 }
 .colorNegro3D{
-	background: #3d3d3d;
+	background: #3d3d3d !important;
 }
 .colorTransparente{
 	background-color: transparent !important;
@@ -13,6 +13,12 @@
 .item-content {
    background:#3d3d3d !important;
    color: #ffffff !important;
+}
+
+.bar-stable .button.button-clear {
+
+    color: white;
+
 }
 
 img {
