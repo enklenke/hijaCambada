@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController', 'ui.router'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasController', 'starter.avesController', 'starter.esquemaController', 'ui.router'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -412,6 +412,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
         }
       }
     })
+
   // //***************** PAJAROS //*****************
   // Pantalla principal de pajaros (donde salen las letras)
   .state('app.principalPajaros', {
@@ -423,6 +424,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+
   // Pantalla principal de pajaros (donde salen las letras)
   .state('app.principalPajarosMenu', {
     url: '/principalPajarosMenu',
@@ -444,25 +446,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+
   // //***************** ESQUEMA //*****************
-  // Pantalla principal de esquema
+  // Pantalla principal de esquema (donde estan las letras de esquema)
   .state('app.principalEsquema', {
     url: '/principalEsquema',
     views: {
       'menuContent': {
         templateUrl: 'templates/esquema/principalEsquema.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'EsquemaCtrl'
       }
     }
   })
 
-  // Pantalla principal de esquema menu
+  // Pantalla principal de esquema menu (menu dentro del esquema)
   .state('app.principalEsquemaMenu', {
     url: '/principalEsquemaMenu',
     views: {
       'menuContent': {
         templateUrl: 'templates/esquema/principalEsquemaMenu.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'EsquemaCtrl'
       }
     }
   })
@@ -473,11 +476,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     views: {
       'menuContent': {
         templateUrl: 'templates/esquema/esquemaForma.html',
-        controller: 'PlaylistsCtrl'
+        controller: 'EsquemaCtrl'
+      }
+    }
+  })
+
+  //Pantalla EsqueMa margen
+  .state('app.esquemaMargen', {
+    url: '/esquemaMargen',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/esquemaMargen.html',
+        controller: 'EsquemaCtrl'
+      }
+    }
+  })
+
+  //Pantalla EsqueMa venacion
+  .state('app.esquemaVenacion', {
+    url: '/esquemaVenacion',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/esquema/esquemaVenacion.html',
+        controller: 'EsquemaCtrl'
       }
     }
   })
   // //***************** FIN ESQUEMA //*****************
+
   // Pantalla principal de video
   .state('app.principalVideo', {
     url: '/principalVideo',
