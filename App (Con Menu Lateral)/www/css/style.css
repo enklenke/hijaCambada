@@ -93,7 +93,7 @@ img {
 
 /* Boton mas en la pantalla arboles */
 .botonArbolMas{
-    width: 100px;
+    width: 120px;
     height: 100%;
     position: absolute;
     right: 0px;
@@ -101,9 +101,26 @@ img {
 }
 
 .pngArbolMas{
-    width: 300px;
-    top: 0px;
+    width: 100px;
+    top: 420px;
+    right: 215px;
+    vertical-align: top;
+    position: absolute;
+}
+
+/* Boton atras en la pantalla arboles */
+.botonArbolAtras{
+    width: 120px;
+    height: 100%;
+    position: absolute;
     right: 0px;
+    z-index: 30;
+}
+
+.pngArbolAtras{
+    width: 100px;
+    top: 15px;
+    right: 15px;
     vertical-align: top;
     position: absolute;
 }

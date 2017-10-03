@@ -632,7 +632,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     url: '/arbol1Descripcion',
     views: {
       'menuContent': {
-        templateUrl: 'templates/esquema/arbol1Descripcion.html',
+        templateUrl: 'templates/arboles/arbol1Descripcion.html',
         controller: 'PlantasCtrl'
       }
     }
