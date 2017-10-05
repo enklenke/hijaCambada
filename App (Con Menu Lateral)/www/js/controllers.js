@@ -58,4 +58,22 @@ angular.module('starter.controllers', [])
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
+
+.controller('PlaylistCtrl', function($scope) {
+      $scope.clipSrc = '/android_asset/www/video/demo.mp4'
+      $scope.bg = 'img/poems/01.png';
+      var video = document.getElementById("myvideo");
+      if (video.requestFullscreen) {
+        video.requestFullscreen();
+      } else if (video.msRequestFullscreen) {
+        video.msRequestFullscreen();
+      } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen();
+      } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+      }
+})
+
+
+
 ;
