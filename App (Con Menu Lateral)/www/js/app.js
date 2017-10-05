@@ -45,6 +45,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
     }
   })
 
+  //Pantalla principal PLANTAS
+  .state('app.principalPlantas', {
+    url: '/principalPlantas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/plantas/principalPlantas.html',
+        controller: 'PlaylistsCtrl'
+      }
+    }
+  })
+
   // *************** HOJAS **************
   // Pantalla sencilla y compuesta
   .state('app.sencillaCompuesta', {
