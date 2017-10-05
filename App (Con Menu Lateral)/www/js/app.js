@@ -976,6 +976,49 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
   })
   // ************FIN ARBOLES *****************
 
+  // ************* Inicio Practica **************
+  .state('app.materialNecesario', {
+    url: '/materialNecesario',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/practica/materialNecesario.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  .state('app.objetivos', {
+    url: '/objetivos',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/practica/objetivos.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  .state('app.portadaPracticas', {
+    url: '/portadaPracticas',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/practica/portadaPracticas.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  .state('app.practicaUno', {
+    url: '/practicaUno',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/practica/practicaUno.html',
+        controller: 'PlantasCtrl'
+      }
+    }
+  })
+
+  // ************* Fin practica *******************
+
   // Pantalla principal de video
   .state('app.principalVideo', {
     url: '/principalVideo',

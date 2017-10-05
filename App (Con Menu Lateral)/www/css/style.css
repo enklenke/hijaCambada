@@ -7,6 +7,7 @@
 
 }
 
+
 .tituloMenu{
 	color: white;
 	font-size: 22px;
@@ -81,8 +82,25 @@ img {
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-}
 		}
+
+		.siguiente-color{
+		width: 80px;
+		position: absolute;
+		right: 20px;
+		bottom: 0px;
+		margin-bottom: 60px
+		}
+
+		.siguiente-color-rev{
+		width: 80px;
+		position: absolute;
+		left: 20px;
+		bottom: 0px;
+		margin-bottom: 60px
+		}
+
+
 
 .botonAtras{
     width: 100px;
@@ -97,7 +115,6 @@ img {
 	left: 20px;
 	z-index: 30;
 	top: 20px;
-	border:1px solid red;
 
 }
 
@@ -106,6 +123,8 @@ img {
     bottom: 0px;
     vertical-align: bottom;
     position: absolute;
+		margin-bottom: 30px;
+		left: 30px;
 }
 
 /* Boton atras en la pantalla audio (aves) */
@@ -163,9 +182,41 @@ img {
 /* PORTADA */
 .fondoPortada {
     background-size: cover;
-    height: 100vh;
+    height:100vh ;
     background-repeat: no-repeat;
     background-image: url('./../img/pantallas/fondoPortada.jpg');
+		width: 100%;
+		text-align: center;
+}
+
+video{
+	width: 100%;
+	height: auto;
+	margin-top: 50%;
+}
+
+.background-video{
+	background-color: black;
+	height: 100vh;
+	text-align: center;
+}
+
+.videoAtras{
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.playVideo{
+	position: absolute;
+	z-index: 30;
+	top: 0px;
+	width: 30vw;
+	height: 30vw;
+	left: 35vw;
+	top: 65vh;
+
 }
 
 .letrasPortada{
@@ -182,6 +233,7 @@ img {
 .div50{
 	position: relative;
 	width: 100%;
+	height: 45vh;
 }
 .div25{
 	position: relative;
@@ -390,3 +442,53 @@ div.hrFull{
 							top: 3%;
 							left: 78%;
 						}
+
+
+
+/*practicas*/
+
+.fondoObjetivo {
+    background-size: cover;
+		width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./../img/practica/objetivoPractica.png');
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		top: 0px;
+}
+
+.fondoPractica{
+    background-size: cover;
+		width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./../img/practica/practicaPortada.png');
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 0px;
+}
+
+
+.fondoMaterial{
+    background-size: cover;
+		width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./../img/practica/materialNecesario.png');
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		top: 0px;
+}
+
+.iniciarPractica{
+	top: 75%;
+	position: relative;
+}
+
+.procedimiento{
+	width: 100%;
+}
