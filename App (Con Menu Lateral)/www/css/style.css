@@ -1,6 +1,6 @@
 /* COLORES DECLARADOS */
 .colorVerde{
-	background: #80b5a4 !important;
+	background: #62ac9b !important;
 }
 .colorNegro3D{
 	background: #3d3d3d !important;
@@ -22,7 +22,7 @@
 
 /* MENU */
 .item-content {
-   background:#80b5a4 !important;
+   background:#62ac9b !important;
    color: #ffffff !important;
 }
 
@@ -60,12 +60,25 @@ img {
 
 /* Boton atras en la pantalla hojas y pajaros */
 
-.pantallaPlantas{
+.fondo-titulos{
     background-size: cover;
     height: 100vh;
+		padding-top: 50%;
     background-repeat: no-repeat;
-    background-image: url('./../img/pantallas/plantas.jpg');
+    background-image: url('./../img/pantallas/portadas/fondo-titulos.jpg');
+		text-align: center;
+		margin: 0 auto;
 }
+
+		.siguiente{
+		width: 100px;
+		-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+		}
 
 .botonAtras{
     width: 100px;
@@ -197,13 +210,6 @@ div.hrFull{
 
 
 /*Aves pantalla*/
-/* Pantalla principal ave (donde estan las letras) */
-.aves{
-    width: 100%;
-    background-image: url('../img/aves/botones/pantalla-aves.png');
-    background-size: cover;
-    height: 100vh;
-}
 
 /* Pantalla donde se muestras los pajaros */
 .divAvesFull{
@@ -266,12 +272,6 @@ div.hrFull{
 /* Fin arboles */
 
 /*Esquema pantalla*/
-.esquema{
-	width: 100%;
-	background-image: url('./../img/esquema/esquema.png');
-	background-size: cover;
-	height: 99vh;
-}
 
 .EsquemaContenedor {
 	height: 32vh;
@@ -286,14 +286,6 @@ div.hrFull{
 	width: 100%;
 }
 
-
-/*Mapa pantalla principal*/
-.mapa{
-	width: 100%;
-	background-image: url('./../img/mapa/pantalla-mapa.png');
-	background-size: cover;
-	height: 100vh;
-}
 
 /*Puntos del mapa*/
 .imagen-mapa{ /*Mapa background*/
