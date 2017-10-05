@@ -85,31 +85,35 @@ img {
     height: 100%;
     position: absolute;
     z-index: 30;
+
+}
+
+.botonAtrasAves{
+	position: absolute;
+	left: 20px;
+	z-index: 30;
+	top: 20px;
+	border:1px solid red;
+
 }
 
 .pngAtras{
 	width: 60px;
     bottom: 0px;
     vertical-align: bottom;
-    margin: 0px 0px 20px 20px;
     position: absolute;
 }
 
 /* Boton atras en la pantalla audio (aves) */
 .botonAudio{
-    width: 100px;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    z-index: 30;
+	position: absolute;
+	right: 20px;
+	z-index: 30;
+	top: 20px;
 }
 
 .pngAudio{
-    width: 300px;
-    top: 0px;
-    right: 0px;
-    vertical-align: top;
-    position: absolute;
+    width: 60px;
 }
 
 /* Boton atras en la pantalla esquema */
@@ -251,10 +255,9 @@ div.hrFull{
 
 .pngAtrasAve{
     width: 60px;
-    top: 25px;
-    vertical-align: bottom;
-    margin: 0px 0 50px 10px;
+		z-index: 20;
     position: absolute;
+
 }
 /************** Fin pantallas de aves **************/
 
