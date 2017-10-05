@@ -1,11 +1,12 @@
 /* COLORES DECLARADOS */
 .colorVerde{
-	background: #80b5a4 !important;
+	background: #62ac9b !important;
 }
 .colorNegro3D{
 	background: #3d3d3d !important;
 
 }
+
 
 .tituloMenu{
 	color: white;
@@ -16,13 +17,17 @@
 
 }
 
+.bar.bar-stable .title {
+    color: #3d3d3d !important;
+}
+
 .colorTransparente{
 	background-color: transparent !important;
 }
 
 /* MENU */
 .item-content {
-   background:#3d3d3d !important;
+   background:#62ac9b !important;
    color: #ffffff !important;
 }
 
@@ -59,36 +64,79 @@ img {
 }
 
 /* Boton atras en la pantalla hojas y pajaros */
+
+.fondo-titulos{
+    background-size: cover;
+    height: 100vh;
+		padding-top: 50%;
+    background-repeat: no-repeat;
+    background-image: url('./../img/pantallas/portadas/fondo-titulos.jpg');
+		text-align: center;
+		margin: 0 auto;
+}
+
+		.siguiente{
+		width: 100px;
+		-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+		}
+
+		.siguiente-color{
+		width: 80px;
+		position: absolute;
+		right: 20px;
+		bottom: 0px;
+		margin-bottom: 60px
+		}
+
+		.siguiente-color-rev{
+		width: 80px;
+		position: absolute;
+		left: 20px;
+		bottom: 0px;
+		margin-bottom: 60px
+		}
+
+
+
 .botonAtras{
     width: 100px;
     height: 100%;
     position: absolute;
     z-index: 30;
+
+}
+
+.botonAtrasAves{
+	position: absolute;
+	left: 20px;
+	z-index: 30;
+	top: 20px;
+
 }
 
 .pngAtras{
 	width: 60px;
     bottom: 0px;
     vertical-align: bottom;
-    margin: 0px 0px 20px 20px;
     position: absolute;
+		margin-bottom: 30px;
+		left: 30px;
 }
 
 /* Boton atras en la pantalla audio (aves) */
 .botonAudio{
-    width: 100px;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    z-index: 30;
+	position: absolute;
+	right: 20px;
+	z-index: 30;
+	top: 20px;
 }
 
 .pngAudio{
-    width: 300px;
-    top: 0px;
-    right: 0px;
-    vertical-align: top;
-    position: absolute;
+    width: 60px;
 }
 
 /* Boton atras en la pantalla esquema */
@@ -134,9 +182,41 @@ img {
 /* PORTADA */
 .fondoPortada {
     background-size: cover;
-    height: 100vh;
+    height:100vh ;
     background-repeat: no-repeat;
-    background-image: url(../img/pantallas/fondoPortada.jpg);
+    background-image: url('./../img/pantallas/fondoPortada.jpg');
+		width: 100%;
+		text-align: center;
+}
+
+video{
+	width: 100%;
+	height: auto;
+	margin-top: 50%;
+}
+
+.background-video{
+	background-color: black;
+	height: 100vh;
+	text-align: center;
+}
+
+.videoAtras{
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.playVideo{
+	position: absolute;
+	z-index: 30;
+	top: 0px;
+	width: 30vw;
+	height: 30vw;
+	left: 35vw;
+	top: 65vh;
+
 }
 
 .letrasPortada{
@@ -153,6 +233,7 @@ img {
 .div50{
 	position: relative;
 	width: 100%;
+	height: 45vh;
 }
 .div25{
 	position: relative;
@@ -189,13 +270,6 @@ div.hrFull{
 
 
 /*Aves pantalla*/
-/* Pantalla principal ave (donde estan las letras) */
-.aves{
-    width: 100%;
-    background-image: url('../img/aves/botones/pantalla-aves.png');
-    background-size: cover;
-    height: 100vh;
-}
 
 /* Pantalla donde se muestras los pajaros */
 .divAvesFull{
@@ -237,10 +311,9 @@ div.hrFull{
 
 .pngAtrasAve{
     width: 60px;
-    top: 25px;
-    vertical-align: bottom;
-    margin: 0px 0 50px 10px;
+		z-index: 20;
     position: absolute;
+
 }
 /************** Fin pantallas de aves **************/
 
@@ -258,12 +331,6 @@ div.hrFull{
 /* Fin arboles */
 
 /*Esquema pantalla*/
-.esquema{
-	width: 100%;
-	background-image: url('./../img/esquema/esquema.png');
-	background-size: cover;
-	height: 99vh;
-}
 
 .EsquemaContenedor {
 	height: 32vh;
@@ -278,14 +345,6 @@ div.hrFull{
 	width: 100%;
 }
 
-
-/*Mapa pantalla principal*/
-.mapa{
-	width: 100%;
-	background-image: url('./../img/mapa/pantalla-mapa.png');
-	background-size: cover;
-	height: 100vh;
-}
 
 /*Puntos del mapa*/
 .imagen-mapa{ /*Mapa background*/
@@ -383,3 +442,53 @@ div.hrFull{
 							top: 3%;
 							left: 78%;
 						}
+
+
+
+/*practicas*/
+
+.fondoObjetivo {
+    background-size: cover;
+		width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./../img/practica/objetivoPractica.png');
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		top: 0px;
+}
+
+.fondoPractica{
+    background-size: cover;
+		width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./../img/practica/practicaPortada.png');
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 0px;
+}
+
+
+.fondoMaterial{
+    background-size: cover;
+		width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('./../img/practica/materialNecesario.png');
+		text-align: center;
+		margin: 0 auto;
+		position: absolute;
+		top: 0px;
+}
+
+.iniciarPractica{
+	top: 75%;
+	position: relative;
+}
+
+.procedimiento{
+	width: 100%;
+}
