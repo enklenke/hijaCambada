@@ -13,8 +13,8 @@ var audioMosquitero = new Audio('audio/sonidos-aves/mosquitero.mp3');
 var audioPalomaRabiche = new Audio('audio/sonidos-aves/paloma-rabiche.mp3');
 var audioPalomaTurque = new Audio('audio/sonidos-aves/paloma-turque.mp3');
 var audioPetirrojo = new Audio('audio/sonidos-aves/petirrojo.mp3');
-var audioPinzon = new Audio('audio/sonidos-aves/petirrojo.mp3');
-var audioReyezuelo = new Audio('audio/sonidos-aves/petirrojo.mp3');
+var audioPinzon = new Audio('audio/sonidos-aves/pinzon.mp3');
+var audioReyezuelo = new Audio('audio/sonidos-aves/reyezuelo.mp3');
 
 // Creamos una variable para hacer la condicion de si suena o no suena.
 var seOye = "no";
