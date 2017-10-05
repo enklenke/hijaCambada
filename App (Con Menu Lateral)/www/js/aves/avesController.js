@@ -13,6 +13,8 @@ var audioMosquitero = new Audio('audio/sonidos-aves/mosquitero.mp3');
 var audioPalomaRabiche = new Audio('audio/sonidos-aves/paloma-rabiche.mp3');
 var audioPalomaTurque = new Audio('audio/sonidos-aves/paloma-turque.mp3');
 var audioPetirrojo = new Audio('audio/sonidos-aves/petirrojo.mp3');
+var audioPinzon = new Audio('audio/sonidos-aves/petirrojo.mp3');
+var audioReyezuelo = new Audio('audio/sonidos-aves/petirrojo.mp3');
 
 // Creamos una variable para hacer la condicion de si suena o no suena.
 var seOye = "no";
@@ -57,6 +59,16 @@ var seOye = "no";
   $scope.playPetirrojo = function() {
     audioPetirrojo.play();
     seOye = "petirrojo";
+  };
+
+  $scope.playPinzon = function() {
+    audioPinzon.play();
+    seOye = "pinzon";
+  };
+
+  $scope.playReyezuelo = function() {
+    audioReyezuelo.play();
+    seOye = "reyezuelo";
   };
 
 
@@ -128,6 +140,24 @@ var seOye = "no";
     // Si suena el petirrojo, lo paramos y modificamos la variable seOye
     else if (seOye == "petirrojo"){
           audioPetirrojo.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el pinzon, lo paramos y modificamos la variable seOye
+    else if (seOye == "pinzon"){
+          audioPinzon.pause();
+          seOye = "no";
+
+          // Volvemos atras.
+          window.history.back();
+    }
+
+    // Si suena el reyezuelo, lo paramos y modificamos la variable seOye
+    else if (seOye == "reyezuelo"){
+          audioReyezuelo.pause();
           seOye = "no";
 
           // Volvemos atras.

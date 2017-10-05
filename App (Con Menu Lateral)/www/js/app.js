@@ -534,6 +534,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.plantasContr
       }
     }
   })
+
+  // Pantalla principal del pajaro reyezuelo
+  .state('app.pajaroReyezuelo', {
+    url: '/pajaroReyezuelo',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/aves/pajaroReyezuelo.html',
+        controller: 'AvesCtrl'
+      }
+    }
+  })
   // ***************** FIN PAJAROS *****************
 
   // //***************** MAPA *****************
