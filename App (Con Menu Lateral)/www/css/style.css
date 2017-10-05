@@ -22,7 +22,7 @@
 
 /* MENU */
 .item-content {
-   background:#3d3d3d !important;
+   background:#80b5a4 !important;
    color: #ffffff !important;
 }
 
@@ -136,7 +136,7 @@ img {
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
-    background-image: url(../img/pantallas/fondoPortada.jpg);
+    background-image: url(./../img/pantallas/fondoPortada.jpg);
 }
 
 .letrasPortada{
