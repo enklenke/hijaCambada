@@ -7,16 +7,8 @@
         <i class="ion-arrow-left-c"></i> Atrás
       </ion-nav-back-button>
     -->
-
-      <ion-nav-buttons side="left" ng-controller="AvesCtrl">
-        <button class="button button-icon button-clear ion-navicon " menu-toggle="left" ng-click="stopSonido()">
-<<<<<<< HEAD
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon " menu-toggle="left">
-=======
->>>>>>> parent of e52ec45... Merge branch 'master' of https://github.com/enklenke/hijaCambada
-        </button>
-
+        <button class="button button-icon button-clear ion-navicon " menu-toggle="left"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
@@ -26,22 +18,22 @@
     <ion-header-bar class="colorNegro3D tituloMenu"> <!-- Le damos el color al background del sidemenu ->
       <h1 class="title"></h1> <!-- Titulo en el menu lateral -->Aula Naturaleza
     </ion-header-bar>
-    <ion-content class="colorNegro3D"> <!-- Color de fondo del sidemnu -->
+    <ion-content class="colorNegro3D" ng-controller="AvesCtrl"> <!-- Color de fondo del sidemnu -->
       <ion-list>
 
-        <ion-item menu-close href="#/app/sencillaCompuesta">
+        <ion-item menu-close href="#/app/sencillaCompuesta" ng-click="stopSonido()">
           Plantas
         </ion-item>
-        <ion-item menu-close href="#/app/principalPajaros">
+        <ion-item menu-close href="#/app/principalPajaros" ng-click="stopSonido()">
           Aves
         </ion-item>
-        <ion-item menu-close href="#/app/principalMapa">
+        <ion-item menu-close href="#/app/principalMapa" ng-click="stopSonido()">
           Mapa
         </ion-item>
-        <ion-item menu-close href="#/app/principalEsquema">
+        <ion-item menu-close href="#/app/principalEsquema" ng-click="stopSonido()">
           Esquema
         </ion-item>
-        <ion-item menu-close href="#/app/principalVideo">
+        <ion-item menu-close href="#/app/principalVideo" ng-click="stopSonido()">
           Video
         </ion-item>
       <!--
