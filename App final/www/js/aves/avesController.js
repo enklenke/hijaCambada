@@ -173,6 +173,71 @@ var seOye = "no";
   }
 
 
+  // Funcion que para un sonido si esta sonando y tambien va a la pantalla anterior (es el boton atras con mas funcionalidad)
+  $scope.stopSonidoPulsandoMenu = function(){
+    // Si suena el cuervo, lo paramos y modificamos la variable seOye
+    if (seOye == "cuervo"){
+          audioCuervo.pause();
+          seOye = "no";
+    }
+
+    // Si suena el gavilan, lo paramos y modificamos la variable seOye
+    else if (seOye == "gavilan"){
+          audioGavilan.pause();
+          seOye = "no";
+    }
+
+    // Si suena el herrerillo, lo paramos y modificamos la variable seOye
+    else if (seOye == "herrerillo"){
+          audioHerrerillo.pause();
+          seOye = "no";
+    }
+
+    // Si suena el mirlo, lo paramos y modificamos la variable seOye
+    else if (seOye == "mirlo"){
+          audioMirlo.pause();
+          seOye = "no";
+    }
+
+    // Si suena el mosquitero, lo paramos y modificamos la variable seOye
+    else if (seOye == "mosquitero"){
+          audioMosquitero.pause();
+          seOye = "no";
+    }
+
+    // Si suena el paloma-rabiche, lo paramos y modificamos la variable seOye
+    else if (seOye == "paloma-rabiche"){
+          audioPalomaRabiche.pause();
+          seOye = "no";
+    }
+
+    // Si suena el paloma-turque, lo paramos y modificamos la variable seOye
+    else if (seOye == "paloma-turque"){
+          audioPalomaTurque.pause();
+          seOye = "no";
+    }
+
+    // Si suena el petirrojo, lo paramos y modificamos la variable seOye
+    else if (seOye == "petirrojo"){
+          audioPetirrojo.pause();
+          seOye = "no";
+    }
+
+    // Si suena el pinzon, lo paramos y modificamos la variable seOye
+    else if (seOye == "pinzon"){
+          audioPinzon.pause();
+          seOye = "no";
+    }
+
+    // Si suena el reyezuelo, lo paramos y modificamos la variable seOye
+    else if (seOye == "reyezuelo"){
+          audioReyezuelo.pause();
+          seOye = "no";
+    }
+
+  }
+
+
 }) // Fin del controller
 
 
